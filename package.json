@@ -37,10 +37,4 @@
     "jest-expo": "~36.0.1"
   },
   "private": true
-
-  "rnpm": {
-	"assets": [
-	"./assets/fonts/"
-	]
-	}
 }
