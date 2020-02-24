@@ -17,7 +17,7 @@ export default function MenuScreen(props){
 
 
         }, [] )
-        return <View><Text> JSON.stringify(menu, null, 2)I am hangroy..</Text></View>
+        return <View><Text> JSON.stringify(menu, null, 2)I am hangry..</Text></View>
 
 
 

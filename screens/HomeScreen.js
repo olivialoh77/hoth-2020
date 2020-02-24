@@ -37,7 +37,7 @@ return (
           </View>
 
           <Text style={styles.getStartedText}>
-	The information in this game has no intended relation to real individuals, groups, areas, incidents, or ideas.
+	The informationzzz in this game has no intended relation to real individuals, groups, areas, incidents, or ideas.
 	</Text>
         </View>
 
