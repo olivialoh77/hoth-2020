@@ -62,9 +62,9 @@ function getHeaderTitle(route) {
     case 'Home':
       return 'How to get started';
     case 'Links':
-      return 'Links to learn more';
+      return 'Pick your perfect cat';
     case 'Menu':
-	return 'Pick your perfect cat';
+	return 'Take a picture';
     case 'Instruction':
 	return 'Getting you started';
   }
