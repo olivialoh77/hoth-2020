@@ -5,6 +5,7 @@ import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
 import MenuScreen from '../screens/MenuScreen';
 import Instruction from '../screens/Instruction';
+import Camera from '../Camera';
 
 const BottomTab = createBottomTabNavigator();
 const INITIAL_ROUTE_NAME = 'Home';
@@ -29,15 +30,15 @@ export default function BottomTabNavigator({ navigation, route }) {
         name="Links"
         component={LinksScreen}
         options={{
-          title: 'Camera',
+          title: 'Linking',
           tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-book" />,
         }}
       />
      <BottomTab.Screen
         name="Menu"
-        component={MenuScreen}
+        component={Camera}
         options={{
-          title: 'Menu',
+          title: 'Camera',
           tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-book" />,
         }}
       />
