@@ -62,10 +62,10 @@ function DevelopmentModeNotice() {
     );
 
     return (
-      <Text style={styles.developmentModeText}>
-        Development mode is enabled: your app will be slower but you can use useful development
-        tools. {learnMoreButton}
-      </Text>
+	<Text style={styles.developmentModeText}>
+         Development mode is enabled: your app will be slower but you can use useful development
+         tools. {learnMoreButton}
+       </Text>
     );
   } else {
     return (
@@ -110,23 +110,22 @@ const styles = StyleSheet.create({
     width: 150,
     height: 120,
     resizeMode: 'contain',
-    marginTop: 3,
-    marginLeft: -10,
+    marginTop: 5,
   },
   titleContainer:{
     alignItems: 'center',
     marginTop: 15, 
   },
   titleImage: {
-    width: 50,
-    height: 25, 
+    width: 100,
+    height: 30, 
     resizeMode: 'contain', 
-    marginTop: 5, 
+    marginTop: 10, 
   }, 
   getStartedContainer: {
     alignItems: 'center',
     marginHorizontal: 50,
-    marginTop: 200,
+    marginTop: 50,
   },
   homeScreenFilename: {
     marginVertical: 7,
