@@ -4,6 +4,7 @@ import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
 import MenuScreen from '../screens/MenuScreen';
+import Instruction from '../screens/Instruction';
 
 const BottomTab = createBottomTabNavigator();
 const INITIAL_ROUTE_NAME = 'Home';
@@ -40,6 +41,15 @@ export default function BottomTabNavigator({ navigation, route }) {
           tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-book" />,
         }}
       />
+       <BottomTab.Screen
+        name="Instruction"
+        component={Instruction}
+        options={{
+          title: 'Instruction',
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-book" />,
+        }}
+      />
+
     </BottomTab.Navigator>
   );
 }
@@ -54,5 +64,7 @@ function getHeaderTitle(route) {
       return 'Links to learn more';
     case 'Menu':
 	return 'Pick your perfect cat';
+    case 'Instruction':
+	return 'Getting you started';
   }
 }
