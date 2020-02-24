@@ -60,7 +60,7 @@ function getHeaderTitle(route) {
 
   switch (routeName) {
     case 'Home':
-      return 'How to get started';
+      return 'CATostraphy';
     case 'Links':
       return 'Pick your perfect cat';
     case 'Menu':

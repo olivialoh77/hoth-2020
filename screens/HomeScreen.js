@@ -32,7 +32,6 @@ return (
         </View>
 
         <View style={styles.getStartedContainer}>
-          <DevelopmentModeNotice />
           <View style={[styles.codeHighlightContainer, styles.homeScreenFilename]}>
           </View>
 
@@ -42,9 +41,7 @@ return (
         </View>
 
         <View style={styles.helpContainer}>
-          <TouchableOpacity onPress={handleHelpPress} style={styles.helpLink}>
             <Text style={styles.helpLinkText}>@DOSS ENTERTAINMENT</Text> 
-	</TouchableOpacity>
         </View>
       </ScrollView>
      </View>
