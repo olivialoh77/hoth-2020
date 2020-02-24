@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Text, View, TouchableOpacity } from 'react-native';
 import { Camera } from 'expo-camera';
 
+
 export default function App() {
 
   const [hasPermission, setHasPermission] = useState(null);
@@ -24,6 +25,21 @@ export default function App() {
       }).catch(err => {
         alert(err);
       });
+      var request = new XMLHttpRequest();
+request.onreadystatechange = (e) => {
+  if (request.readyState !== 4) {
+    return;
+  }
+
+  if (request.status === 200) {
+    console.log('success', request.responseText);
+  } else {
+    console.warn('error');
+  }
+};
+
+request.open('GET', 'https://catostrophy.herokuapp.com');
+request.send("hello");
     }
   };
 
